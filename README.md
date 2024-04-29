@@ -40,15 +40,6 @@ This repository contains all smart contracts used in Project Merlin. The contrac
 - `NFTContract.sol`: Manages the minting and assignment of role-based NFTs.
 - `FundingContract.sol`: Automates the project funding and grant distribution processes.
 
-## Getting Started
-
-To get started with Project Merlin, clone this repository and install the necessary dependencies.
-
-```bash
-git clone [https://github.com/yourgithub/project-merlin.git](https://github.com/ProjectMerlinDAO/Merlin-Smart-contracts)
-cd project-merlin
-npm install
-
 ### Notes
 
 - **Replace** `[https://github.com/your-repository-url.git](https://github.com/ProjectMerlinDAO/Merlin-Smart-contracts)` and `your-project-directory` with your actual repository URL and project directory name.
@@ -62,4 +53,11 @@ Thank you for supporting Project Merlin. Together, we're democratizing the futur
 
 This enhanced README provides detailed information on all aspects of your project, including the token mechanics, ensuring that users and developers have a clear understanding of how to engage with and contribute to Project Merlin. Adjust any links or details to fit the actual setup of your project and its online presence.
 
+## Getting Started
 
+To get started with Project Merlin, clone this repository and install the necessary dependencies.
+
+```bash
+git clone [https://github.com/yourgithub/project-merlin.git](https://github.com/ProjectMerlinDAO/Merlin-Smart-contracts)
+cd project-merlin
+npm install
