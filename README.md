@@ -46,8 +46,6 @@ For more information, contact us at info@projectmerlin.io or visit our [website]
 
 Thank you for supporting Project Merlin. Together, we're democratizing the future of project funding and governance!
 
-This enhanced README provides detailed information on all aspects of your project, including the token mechanics, ensuring that users and developers have a clear understanding of how to engage with and contribute to Project Merlin. Adjust any links or details to fit the actual setup of your project and its online presence.
-
 ## Getting Started
 
 To get started with Project Merlin, clone this repository and install the necessary dependencies.
