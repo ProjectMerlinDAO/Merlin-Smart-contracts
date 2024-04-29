@@ -42,11 +42,6 @@ This repository contains all smart contracts used in Project Merlin. The contrac
 
 ### Notes
 
-- **Replace** `[https://github.com/your-repository-url.git](https://github.com/ProjectMerlinDAO/Merlin-Smart-contracts)` and `your-project-directory` with your actual repository URL and project directory name.
-- **Ensure** all paths and variables are correctly set according to your project's configuration and network setup.
-
-You can directly copy this README to your GitHub repository to provide clear documentation for other developers or users interacting with your smart contracts.
-
 For more information, contact us at info@projectmerlin.io or visit our [website](https://projectmerlin.io).
 
 Thank you for supporting Project Merlin. Together, we're democratizing the future of project funding and governance!
