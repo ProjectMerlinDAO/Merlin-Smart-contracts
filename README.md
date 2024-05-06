@@ -43,7 +43,7 @@ This repository contains all smart contracts used in Project Merlin. The contrac
 ### Notes
 
 For more information, contact us at info@projectmerlin.io or visit our [website](https://projectmerlin.io).
-Other Social Media Platforms: [Telegram](https://t.me/ProjectMerlin) [Discord](https://discord.com/invite/projectmerlin) [Twitter](twitter.com/ProjectMerlinio)
+Other Social Media Platforms: [Telegram](https://t.me/ProjectMerlin) [Discord](https://discord.com/invite/projectmerlin) [Twitter](https://twitter.com/ProjectMerlinio)
 Thank you for supporting Project Merlin. Together, we're democratizing the future of project funding and governance!
 
 ## Getting Started
