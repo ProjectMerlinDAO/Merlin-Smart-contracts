@@ -1,56 +1,106 @@
-# Project Merlin: Crowdfunding DAO
+# Project Merlin: Smart Contracts Repository
 
-Welcome to the official GitHub repository for Project Merlin, an innovative DAO and crowdfunding platform leveraging blockchain technology to foster democratic participation and transparent project financing. This platform is designed to enable users to actively participate in the project selection and funding processes through a 'Vote 2 Earn' mechanism and the use of NFTs.
+Welcome to the official repository for Project Merlin's Smart Contracts. Project Merlin is an all-inclusive decentralized platform providing everything needed to turn ideas into fully realized projects within the Web3 ecosystem. This repository contains the Solidity smart contracts that power the MerlinCap DAO, crowdfunding mechanisms, NFT-based governance, and token functionalities.
 
 ## Overview
 
-Project Merlin integrates blockchain technology to provide a decentralized platform where community members can vote on, fund, and benefit from a variety of projects in the fields of Web3 and GameFi. Our aim is to create a more accessible and fair environment for project financing and development.
+Project Merlin is a multi-functional, decentralized platform that integrates several key services:  
+- **MerlinCap DAO**: Community-driven crowdfunding platform.  
+- **Merlin’s Guild**: A freelance marketplace.  
+- **Excaliber**: On-chain platform for identity building and engagement.  
+- **Avalon Launchpad**: IDO launchpad for early-stage projects.  
+
+This repository includes all the necessary smart contracts required to facilitate these services, focusing on community engagement, funding, and decentralized governance.
 
 ## Features
 
-- **Democratic Voting**: Utilizes a 'Vote 2 Earn' mechanism that empowers users to influence project governance.
-- **NFT Roles**: Assigns specific roles and privileges in the DAO through NFTs.
-- **Multi-Blockchain Support**: Operates across multiple blockchains including Ethereum, Polygon, Avax, and more.
-- **Smart Contract Automation**: Manages fund distribution and project approvals through smart contracts to ensure transparency and security.
-- **Community-Driven Funding**: Supports projects through community votes and decentralized funding mechanisms.
-- **NFT (Non-Fungible Tokens)**: Deployed using an ERC721 standard, enabling the creation, sale, and trade of unique digital assets.
-- **Token Sale**: Utilizes an ERC20 token interface for managing a token sale, including features such as setting a maximum cap, handling investments, and transferring tokens.
+- **Democratic Voting**: Through the 'Vote 2 Earn' mechanism, users influence project funding and governance.
+- **NFT-Based Roles**: Specific roles and privileges within the DAO are assigned using NFTs, built on the ERC721 standard.
+- **Multi-Blockchain Support**: Operates across Ethereum, Polygon, Avax, and other EVM-compatible blockchains.
+- **Smart Contract Automation**: Transparent fund distribution and project approval via smart contracts.
+- **Tokenomics and Vesting**: ERC20 tokenomics structure with vesting contracts for the MRLN token, handling token distribution and sale mechanisms.
+  
+## Smart Contract Overview
 
-## Smart Contract Details
+The contracts in this repository are primarily built using the Solidity language and deployed on Ethereum and other EVM-compatible networks.
 
-This repository contains all smart contracts used in Project Merlin. The contracts are built on Solidity and deployed on the Ethereum blockchain (EVM compatible).
+### Key Contracts:
 
-### NFT Contract
+1. **DAO.sol**  
+   Manages the core DAO functionalities, including event creation, voting, and reward distribution.
+   
+2. **MerlinToken.sol**  
+   ERC20 token contract for the native MRLN token used within the platform.
+   
+3. **VotingContract.sol**  
+   Handles all voting mechanisms and reward distribution for community governance.
+   
+4. **NFTContract.sol**  
+   Manages the minting and assignment of role-based NFTs (ERC721) that grant users different privileges within the DAO.
 
-- **ERC721 Standard**: For creating unique digital collectibles.
-- **Metadata and Enumerable Extensions**: Supports metadata for NFTs and provides enumeration capabilities.
-- **Ownership Management**: Includes functions for minting NFTs, transferring ownership, and querying NFT details.
+5. **FundingContract.sol**  
+   Automates the project funding, grant distribution, and ensures that the community's decisions are executed transparently.
 
-### Token Sale Contract
+## Tokenomics
 
-- **ERC20 Interface**: Standard interface for the tokens used in the sale.
-- **Pausable**: Sale can be paused and unpaused by the owner, adding a layer of control over the contract's operation.
-- **Ownership Transfers**: Ownership of the token contract can be transferred to a new owner.
+MRLN Token has a total supply of 800,000,000. Below is the token allocation structure:
 
-### Contracts Overview
-
-- `DAO.sol`: Manages the core functionality of the DAO, including event creation, voting, and reward distribution.
-- `MerlinToken.sol`: ERC-20 token contract for the platform's native token, Merlin (MRLN).
-- `VotingContract.sol`: Handles all voting mechanisms and reward distributions.
-- `NFTContract.sol`: Manages the minting and assignment of role-based NFTs.
-- `FundingContract.sol`: Automates the project funding and grant distribution processes.
-
-### Notes
-
-For more information, contact us at info@projectmerlin.io or visit our [website](https://projectmerlin.io).
-Other Social Media Platforms: [Telegram](https://t.me/ProjectMerlin) [Discord](https://discord.com/invite/projectmerlin) [Twitter](https://twitter.com/ProjectMerlinio)
-Thank you for supporting Project Merlin. Together, we're democratizing the future of project funding and governance!
+| Category    | % Allocation | Token Amount | Release Schedule (months) |
+|-------------|--------------|--------------|---------------------------|
+| Seed        | 2.50%        | 20,000,000   | 14                        |
+| Private     | 2.50%        | 20,000,000   | 13                        |
+| Strategic   | 2.00%        | 16,000,000   | 10                        |
+| Public      | 5.00%        | 40,000,000   | 16                        |
+| Airdrop     | 2.00%        | 16,000,000   | 31                        |
+| Operations  | 9.00%        | 72,000,000   | 41                        |
+| Marketing   | 6.00%        | 48,000,000   | 31                        |
+| Grants      | 15.00%       | 120,000,000  | 42                        |
+| Dev Team    | 12.00%       | 96,000,000   | 55                        |
+| Treasury    | 30.00%       | 240,000,000  | 58                        |
+| Liquidity   | 13.00%       | 104,000,000  | 19                        |
+| Advisors    | 1.00%        | 8,000,000    | 14                        |
 
 ## Getting Started
 
-To get started with Project Merlin, clone this repository and install the necessary dependencies.
+To interact with the contracts in this repository, follow these steps:
+
+### 1. Clone the Repository
 
 ```bash
-git clone [Clone](https://github.com/ProjectMerlinDAO/Merlin-Smart-contracts)
-cd project-merlin
+git clone https://github.com/ProjectMerlinDAO/Merlin-Smart-contracts
+cd Merlin-Smart-contracts
 npm install
+```
+
+### 2. Compile Contracts
+
+Use Hardhat to compile the contracts:
+
+```bash
+npx hardhat compile
+```
+
+### 3. Deploy Contracts
+
+Deploy the smart contracts to a test or mainnet blockchain:
+```bash
+npx hardhat run scripts/deploy.js --network <network_name>
+```
+
+### Contract Interaction
+Once the contracts are deployed, you can interact with them using the Hardhat console or scripts located in the scripts/ directory. Example script usage:
+```bash
+npx hardhat run scripts/interact.js --network <network_name>
+```
+
+## Learn More
+
+For additional resources on how to use these contracts and their functionality, check out:
+
+- [ERC20 Token Standard](https://eips.ethereum.org/EIPS/eip-20)
+- [Vesting in Tokenomics](https://medium.com/vesting-guide)
+- [Hardhat Documentation](https://hardhat.org/docs/)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/ProjectMerlinDAO/MRLNToken/blob/main/LICENSE) file for details.
